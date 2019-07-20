@@ -1,0 +1,107 @@
+//color variables
+$color-white: white;
+$color-black: black;
+
+//color for main pages
+$dark-white: rgba(darken($color-white, 30), 0.9);
+$light-white: rgba(227, 230, 233, 1);
+$transparent-white: rgba(227, 230, 233, 0.3);
+
+$dark-black: rgba(darken($color-black, 30), 0.9);
+$light-black: rgba(darken($color-black, 20), 0.8);
+
+//font-variable
+$font-arial: Arial, Helvetica, sans-serif;
+$font-monospace: monospace;
+$font-cursive: cursive;
+
+//button box-shadow
+$btn-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+$btn-hover-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+//card shadow
+$card-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+$card-hover-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+//mixins
+@mixin easeOut{
+  transition: all .5s ease-out;
+}
+
+@mixin easeIn{
+  transition: all .5s ease-in;
+}
+
+@mixin reset-default {
+
+  *, html, body, div, dl, dt, dd, ul, ol, 
+  li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, 
+  p, blockquote, th, td {
+     margin: 0;
+     padding: 0;
+  }
+
+  table {
+     border-collapse: collapse; 
+     border-spacing: 0; 
+  }
+
+  fieldset, img {
+     border: 0; 
+  }
+
+  address, caption, cite, code, dfn, em, strong, th, var {
+     font-style: normal; 
+     font-weight: normal;
+  }
+
+  ol, ul, li {
+     list-style: none;
+  }
+
+  caption, th {
+     text-align: left;
+  }
+
+  h1, h2, h3, h4, h5, h6 { 
+     font-size: 100%;
+     font-weight: normal;
+  }
+
+  q:before, q:after {
+     content: '';
+  }
+
+  strong {
+     font-weight: bold;
+  }
+
+  em {
+     font-style: italic;
+  }
+
+  a, img { 
+     border: none;
+  } 
+
+  sup {
+     font-size: 50%; 
+  }
+
+  a, a:hover {
+     text-decoration: none;
+  }
+
+  a{
+     color: black;
+
+     &:hover{
+        color: $dark-white;
+     }
+
+     &:active{
+        color: $light-white;
+     }
+  }
+}

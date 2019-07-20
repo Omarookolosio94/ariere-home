@@ -1,0 +1,47 @@
+//landing page 
+#section-a{
+  padding-top: 3.4rem;
+  background-color: $dark-white;
+  //background: url('../../dist/img/pic2.jpg') no-repeat;
+  //background-position: center;
+  //background-size: cover;
+  height: 50vh;
+
+  //landing page container
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+//landing page details
+#section-a .details{
+  margin: 3.5rem auto 2rem;
+  width: 80%;
+
+  h1,i,p{
+    margin-bottom: 1rem;
+  }
+
+  i{
+    font-size: 2rem;
+  }
+  
+}
+
+//landing page button style
+#section-a button{
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  box-shadow: $card-shadow;
+
+  &:hover{
+    box-shadow: $card-hover-shadow;
+  }
+}

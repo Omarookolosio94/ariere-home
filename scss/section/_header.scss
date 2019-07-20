@@ -1,0 +1,89 @@
+//header styling making header fixed
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $dark-white;
+  z-index: 2;
+
+  //header container
+  .container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: .5rem;
+  }
+}
+
+//fixed logo
+header .logo{
+  width: 90%;
+  margin: 0 auto;
+
+  //equal width icons ,make sure icons always stay inline
+  i{
+    width: 40%;
+    padding: 1rem 0;
+  }
+}
+
+//styling for the side navigation
+header .sidenav{
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: -200px;
+  background-color: $dark-white;
+  height: 100%;
+  z-index: 1;
+  transition: all .5s ease-in;
+
+  //close button style
+  button.close{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+  }
+
+  //nav links styles
+  ul.head-nav{
+    width: 100%;
+    margin-top: 3rem;
+    
+
+    //creating the white colored bottom border
+    li{
+      border-bottom: 1px solid $light-white;
+      padding: 8px 16px;
+
+      &:first-child{
+        border-top: 1px solid $light-white;
+      }
+
+      a:hover{
+        color: $light-white;
+      }
+    }
+  }
+
+  //article sub nav styling
+  ul.sub-nav{
+    margin-top: 1rem;
+
+    li{
+      border: none;
+
+      &:first-child{
+        border-top: none;
+      }
+    }
+  }
+
+  //make side nav display on screen
+  &.show{
+    left: 0;
+  }
+}

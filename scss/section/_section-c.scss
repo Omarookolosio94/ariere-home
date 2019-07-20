@@ -1,0 +1,179 @@
+//article page styling
+.section-c{
+
+  //container for articles
+  .container{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $dark-white; 
+  }
+}
+
+//container for articles
+.section-c .c-container{
+  display: flex;
+  flex-direction: row;
+  //flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+
+//style for left section containing main articles
+.section-c .c-left{
+  width: 60%;
+  
+  article.main{
+    text-align: center;
+    border-bottom: 1px solid  $dark-white;
+
+    img{
+      width: 100%;
+      border-bottom: 4px solid $dark-white;
+      
+    }
+
+    //main content features also repeated in side nav
+    .m-content{
+      position: relative;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+
+      h4{
+        position: absolute;
+        top: -1.5rem;
+        left: 40%;
+        background-color: $dark-white;
+        padding: 8px 16px;
+        width: auto;
+        margin: 0 auto;
+      }
+
+      //paragraph with details style
+      p.details{
+        padding-top: 1rem;
+        line-height: 1.4rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 60%;
+        margin: 0 auto;
+      }
+      
+      //practicals with athours and positons
+      p.author{
+        padding-top: .8rem;
+        font-size: .8rem;
+        color: $dark-white;
+
+        //styling contributors spam section
+        span.name{
+          color: black;
+          font-weight: 600;
+        }
+      }
+    
+    }
+
+  }
+
+  .topics{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    //subtopics
+    article.sub-topic{
+      width: 48%;
+      display: flex;
+      //flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 1rem 2px;
+
+      &:first-child, &:nth-child(3){
+        border-right: 1px solid $dark-white;
+      }
+
+      img{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+      }
+
+      .s-content{
+        //width: 60%;
+        text-transform: capitalize;
+        margin-right: 5px;
+
+        h4{
+          line-height: 1.4rem;
+          font-weight: 600;
+        }
+
+        p{
+          padding-top: .8rem;
+          font-size: .8rem;
+          color: $dark-white;
+
+          span.name{
+            color: black;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+//right section containing two sub articles
+.section-c .c-right{
+  border-left: 1px solid $dark-white;
+  text-transform: capitalize;
+  width: 35%;
+  padding: 0 1rem;
+
+  article.sub-topic{
+    border-bottom: 1px solid $dark-white;
+    margin-bottom: 1.3rem;
+    
+    &:last-child{
+      border-bottom: none;
+    }
+
+    img{
+      width: 100%;
+      border-bottom: 4px solid $dark-white;
+    }
+
+    .s-content{
+
+      h4{
+        padding-top: .8rem;
+        font-size: .8rem;
+
+      }
+
+      p.details{
+        padding: 1rem 0;
+        line-height: 1.4rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      p.author{
+        padding: .8rem 0;
+        font-size: .8rem;
+        color: $dark-white;
+
+        //styling contributors spam section
+        span.name{
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+}
