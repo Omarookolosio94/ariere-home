@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "ariere science website ",
   "main": "index.js",
-  "homepage":"https://omarookolosio94.github.io/ariere",
+  "homepage": "https://omarookolosio94.github.io/ariere",
   "scripts": {
-    "sass":"node-sass -w scss/ -o dist/ --recursive",
-    "deploy":"gh-page -d dist"
+    "sass": "node-sass -w scss/ -o dist/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "ariere",
@@ -15,5 +15,8 @@
     "publication"
   ],
   "author": "ariere",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
