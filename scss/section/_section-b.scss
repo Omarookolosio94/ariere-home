@@ -14,7 +14,7 @@ h1.heading{
     width: 90%;
     margin: 0 auto;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $dark-white; 
+    border-bottom: 1px solid $transparent-blue; 
   }
 
 }
@@ -30,16 +30,16 @@ h1.heading{
 //main article sections
 #section-b .b-left{
   width: 60%;
-  border-right: 1px solid $dark-white;
+  border-right: 1px solid $transparent-blue;
 
   //stying main article 
   article.main{
     text-align: center;
-    border-bottom: 1px solid  $dark-white;
+    border-bottom: 1px solid  $transparent-blue;
 
     img{
       width: 100%;
-      border-bottom: 4px solid $dark-white;  
+      border-bottom: 4px solid $transparent-blue;  
     }
 
     //main content features also repeated in side nav
@@ -52,7 +52,7 @@ h1.heading{
         position: absolute;
         top: -1.5rem;
         left: 40%;
-        background-color: $dark-white;
+        background-color: $transparent-blue;
         padding: 8px 16px;
         width: auto;
         margin: 0 auto;
@@ -99,7 +99,7 @@ h1.heading{
       margin: 2rem 2px;
 
       &:first-child{
-        border-right: 1px solid $dark-white;
+        border-right: 1px solid $transparent-blue;
       }
 
       img{
@@ -148,10 +148,10 @@ h1.heading{
   ul.popular-list{
       
     li{
-      border-bottom: 1px solid $light-white;
+      border-bottom: 1px solid $transparent-blue;
 
       &:first-child{
-        border-top: 1px solid $light-white;
+        border-top: 1px solid $transparent-blue;
       }
 
       &:last-child{

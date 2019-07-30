@@ -3,6 +3,9 @@ $color-white: white;
 $color-black: black;
 
 //color for main pages
+$blue: rgba(48, 137, 190, 1);
+$transparent-blue: rgba(48, 137, 190, 0.9);
+
 $dark-white: rgba(darken($color-white, 30), 0.9);
 $light-white: rgba(227, 230, 233, 1);
 $transparent-white: rgba(227, 230, 233, 0.3);

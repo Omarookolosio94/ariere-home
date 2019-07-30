@@ -6,7 +6,7 @@
     width: 90%;
     margin: 0 auto;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $dark-white; 
+    border-bottom: 1px solid $transparent-blue; 
   }
 }
 
@@ -22,15 +22,15 @@
 //style for left section containing main articles
 .section-c .c-left{
   width: 60%;
-  border-right: 1px solid $dark-white;
+  border-right: 1px solid $transparent-blue;
   
   article.main{
     text-align: center;
-    border-bottom: 1px solid  $dark-white;
+    border-bottom: 1px solid  $transparent-blue;
 
     img{
       width: 100%;
-      border-bottom: 4px solid $dark-white;
+      border-bottom: 4px solid $transparent-blue;
       
     }
 
@@ -44,7 +44,7 @@
         position: absolute;
         top: -1.5rem;
         left: 40%;
-        background-color: $dark-white;
+        background-color: $transparent-blue;
         padding: 8px 16px;
         width: auto;
         margin: 0 auto;
@@ -90,7 +90,7 @@
       margin: 1rem 2px;
 
       &:first-child, &:nth-child(3){
-        border-right: 1px solid $dark-white;
+        border-right: 1px solid $transparent-blue;
       }
 
       img{
@@ -133,7 +133,7 @@
   //padding: 0 1rem;
 
   article.sub-topic{
-    border-bottom: 1px solid $dark-white;
+    border-bottom: 1px solid $transparent-blue;
     margin-bottom: 1.3rem;
     
     &:last-child{
@@ -142,7 +142,7 @@
 
     img{
       width: 100%;
-      border-bottom: 4px solid $dark-white;
+      border-bottom: 4px solid $transparent-blue;
     }
 
     .s-content{

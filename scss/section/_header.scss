@@ -2,7 +2,7 @@
 header {
   position: fixed;
   width: 100%;
-  background-color: $dark-white;
+  background-color: $blue;
   z-index: 2;
 
   //header container
@@ -32,7 +32,7 @@ header .sidenav{
   width: 30vw;
   top: 0;
   left: -30vw;
-  background-color: $dark-white;
+  background-color: $transparent-blue;
   height: 100%;
   z-index: 1;
   transition: all .5s ease-in;

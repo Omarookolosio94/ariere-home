@@ -1,5 +1,5 @@
 footer{
-  background-color: $dark-white;
+  background-color: $blue;
 
   .container{
     width: 90%;
@@ -14,7 +14,7 @@ footer{
 
 footer .about{
   padding-bottom: 5px;
-  border-bottom: 5px solid $light-white;
+  border-bottom: 4px solid $transparent-white;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
