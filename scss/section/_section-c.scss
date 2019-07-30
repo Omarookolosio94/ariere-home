@@ -87,7 +87,6 @@
     article.sub-topic{
       width: 48%;
       display: flex;
-      justify-content: space-around;
       margin: 1rem 2px;
 
       &:first-child, &:nth-child(3){
@@ -130,6 +129,7 @@
 .section-c .c-right{
   text-transform: capitalize;
   width: 35%;
+  margin: 0 auto;
   //padding: 0 1rem;
 
   article.sub-topic{

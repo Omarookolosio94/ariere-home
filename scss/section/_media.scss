@@ -20,15 +20,16 @@
   #section-b{
 
     .container{
-      width: 100%;
+      width: 90%;
     }
 
     .topic-container{
       flex-direction: column;
     }
 
-    .b-left,.b-right{
+    .b-left{
       width: 100%;
+      border-right: none;
     }
     
     .b-left .topics{
@@ -54,7 +55,7 @@
   .section-c{
 
     .container{
-      width: 100%;
+      width: 90%;
     }
 
     .c-container{
@@ -63,10 +64,63 @@
 
     .c-left{
       width: 100%;
+      border-right: none;
+
+      .topics{
+        display: block;
+
+        article.sub-topic{
+          width: 80%;
+          margin: 2rem auto;
+
+          &:first-child, &:nth-child(3){
+            border-right: none;
+          }
+    
+        }
+      }
     }
 
     .c-right{
-      width: 100%;
+      width: 80%;
+    }
+  }
+
+  footer{
+
+    .container{
+      width: 80%;
+    }
+
+    .about{
+      border: 2px solid blue;
+      display: block;
+
+      ul{
+        li{
+          display: flex;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .add{
+      border: 1px solid red;
+      display: block;
+
+      .address{
+        border: 1px solid pink;
+
+        ul li{
+          display: block;
+        }
+      }
+
+      .media{
+        border: 1px solid green;
+
+      }
+
     }
   }
 }

@@ -304,7 +304,6 @@ h1.heading {
     .section-c .c-left .topics article.sub-topic {
       width: 48%;
       display: flex;
-      justify-content: space-around;
       margin: 1rem 2px; }
       .section-c .c-left .topics article.sub-topic:first-child, .section-c .c-left .topics article.sub-topic:nth-child(3) {
         border-right: 1px solid rgba(179, 179, 179, 0.9); }
@@ -328,7 +327,8 @@ h1.heading {
 
 .section-c .c-right {
   text-transform: capitalize;
-  width: 35%; }
+  width: 35%;
+  margin: 0 auto; }
   .section-c .c-right article.sub-topic {
     border-bottom: 1px solid rgba(179, 179, 179, 0.9);
     margin-bottom: 1.3rem; }
@@ -408,11 +408,12 @@ footer .copyright {
   #section-a .container {
     margin: 20% auto; }
   #section-b .container {
-    width: 100%; }
+    width: 90%; }
   #section-b .topic-container {
     flex-direction: column; }
-  #section-b .b-left, #section-b .b-right {
-    width: 100%; }
+  #section-b .b-left {
+    width: 100%;
+    border-right: none; }
   #section-b .b-left .topics {
     display: block; }
     #section-b .b-left .topics article.sub-topic {
@@ -424,10 +425,35 @@ footer .copyright {
     width: 80%;
     margin: 0 auto; }
   .section-c .container {
-    width: 100%; }
+    width: 90%; }
   .section-c .c-container {
     flex-direction: column; }
   .section-c .c-left {
-    width: 100%; }
+    width: 100%;
+    border-right: none; }
+    .section-c .c-left .topics {
+      display: block; }
+      .section-c .c-left .topics article.sub-topic {
+        width: 80%;
+        margin: 2rem auto; }
+        .section-c .c-left .topics article.sub-topic:first-child, .section-c .c-left .topics article.sub-topic:nth-child(3) {
+          border-right: none; }
   .section-c .c-right {
-    width: 100%; } }
+    width: 80%; }
+  footer .container {
+    width: 80%; }
+  footer .about {
+    border: 2px solid blue;
+    display: block; }
+    footer .about ul li {
+      display: flex;
+      margin-left: 0; }
+  footer .add {
+    border: 1px solid red;
+    display: block; }
+    footer .add .address {
+      border: 1px solid pink; }
+      footer .add .address ul li {
+        display: block; }
+    footer .add .media {
+      border: 1px solid green; } }
