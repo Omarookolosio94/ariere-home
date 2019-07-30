@@ -39,8 +39,7 @@ h1.heading{
 
     img{
       width: 100%;
-      border-bottom: 4px solid $dark-white;
-      
+      border-bottom: 4px solid $dark-white;  
     }
 
     //main content features also repeated in side nav
@@ -97,7 +96,6 @@ h1.heading{
     article.sub-topic{
       width: 48%;
       display: flex;
-      justify-content: space-around;
       margin: 2rem 2px;
 
       &:first-child{

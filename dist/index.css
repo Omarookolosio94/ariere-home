@@ -198,7 +198,6 @@ h1.heading {
     #section-b .b-left .topics article.sub-topic {
       width: 48%;
       display: flex;
-      justify-content: space-around;
       margin: 2rem 2px; }
       #section-b .b-left .topics article.sub-topic:first-child {
         border-right: 1px solid rgba(179, 179, 179, 0.9); }
@@ -299,8 +298,7 @@ h1.heading {
   .section-c .c-left .topics {
     margin-top: 1rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; }
+    flex-wrap: wrap; }
     .section-c .c-left .topics article.sub-topic {
       width: 48%;
       display: flex;
@@ -401,7 +399,8 @@ footer .copyright {
   justify-content: space-between;
   flex-wrap: wrap; }
 
-@media screen and (max-width: 500px) {
+/*got really tired of writing comments not my fault don't know the english to use nor blame me*/
+@media screen and (max-width: 768px) {
   header .sidenav {
     width: 50vw;
     left: -50vw; }
@@ -410,7 +409,7 @@ footer .copyright {
   #section-b .container {
     width: 90%; }
   #section-b .topic-container {
-    flex-direction: column; }
+    display: block; }
   #section-b .b-left {
     width: 100%;
     border-right: none; }
@@ -441,19 +440,35 @@ footer .copyright {
   .section-c .c-right {
     width: 80%; }
   footer .container {
-    width: 80%; }
+    width: 90%; }
   footer .about {
-    border: 2px solid blue;
     display: block; }
     footer .about ul li {
       display: flex;
       margin-left: 0; }
   footer .add {
-    border: 1px solid red;
     display: block; }
-    footer .add .address {
-      border: 1px solid pink; }
-      footer .add .address ul li {
-        display: block; }
-    footer .add .media {
-      border: 1px solid green; } }
+    footer .add .address ul li {
+      display: block; } }
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  #section-b .container {
+    width: 80%; }
+  .section-c .container {
+    width: 80%; }
+  footer .container {
+    width: 80%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  #section-b .b-left .topics {
+    display: block; }
+    #section-b .b-left .topics article.sub-topic {
+      width: 100%; }
+      #section-b .b-left .topics article.sub-topic:first-child {
+        border-right: none; }
+  .section-c .c-left .topics {
+    display: block; }
+    .section-c .c-left .topics article.sub-topic {
+      width: 100%; }
+      .section-c .c-left .topics article.sub-topic:first-child, .section-c .c-left .topics article.sub-topic:nth-child(3) {
+        border-right: none; } }

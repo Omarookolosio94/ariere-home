@@ -111,7 +111,7 @@ $card-hover-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 //SMARTPHONES
 @mixin mediaSm{
 
-   @media screen and (max-width: 500px){
+   @media screen and (max-width: 768px){
      @content;
    } 
 }
@@ -119,7 +119,7 @@ $card-hover-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
  //TABLETS,SMALL LAPTOPS
  @mixin mediaMd{
 
-   @media screen and (max-width: 768px){
+   @media screen and (min-width: 600px) and (max-width: 768px){ 
      @content;
    } 
 }
@@ -127,7 +127,7 @@ $card-hover-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
  //DESKTOPS,LAPTOPS
  @mixin mediaLg{
 
-   @media screen and (min-width: 769px) and (max-width: 1170px){
+   @media screen and (min-width: 768px) and (max-width: 1170px){
      @content;
    } 
 }
