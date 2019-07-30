@@ -14,7 +14,6 @@
 .section-c .c-container{
   display: flex;
   flex-direction: row;
-  //flex-wrap: wrap;
   justify-content: space-around;
 
 }
@@ -23,6 +22,7 @@
 //style for left section containing main articles
 .section-c .c-left{
   width: 60%;
+  border-right: 1px solid $dark-white;
   
   article.main{
     text-align: center;
@@ -87,7 +87,6 @@
     article.sub-topic{
       width: 48%;
       display: flex;
-      //flex-wrap: wrap;
       justify-content: space-around;
       margin: 1rem 2px;
 
@@ -129,10 +128,9 @@
 
 //right section containing two sub articles
 .section-c .c-right{
-  border-left: 1px solid $dark-white;
   text-transform: capitalize;
   width: 35%;
-  padding: 0 1rem;
+  //padding: 0 1rem;
 
   article.sub-topic{
     border-bottom: 1px solid $dark-white;

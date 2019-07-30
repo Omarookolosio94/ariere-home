@@ -1,0 +1,72 @@
+//smartphones media query less than 500px
+@include mediaSm{
+
+  header{
+
+    .sidenav{
+      width: 50vw;
+      left: -50vw;
+    }
+  }
+ 
+  #section-a{
+    
+    .container{
+      margin: 20% auto;
+    
+    }
+  }
+
+  #section-b{
+
+    .container{
+      width: 100%;
+    }
+
+    .topic-container{
+      flex-direction: column;
+    }
+
+    .b-left,.b-right{
+      width: 100%;
+    }
+    
+    .b-left .topics{
+      display: block;
+
+      article.sub-topic{
+        width: 80%;
+        margin: 2rem auto;
+
+        &:first-child{
+          border-right: none;
+        }
+      }
+    }
+
+    .b-right{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+  }
+
+  .section-c{
+
+    .container{
+      width: 100%;
+    }
+
+    .c-container{
+      flex-direction: column;
+    }
+
+    .c-left{
+      width: 100%;
+    }
+
+    .c-right{
+      width: 100%;
+    }
+  }
+}

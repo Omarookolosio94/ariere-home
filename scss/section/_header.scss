@@ -29,9 +29,9 @@ header .logo{
 //styling for the side navigation
 header .sidenav{
   position: fixed;
-  width: 200px;
+  width: 30vw;
   top: 0;
-  left: -200px;
+  left: -30vw;
   background-color: $dark-white;
   height: 100%;
   z-index: 1;
@@ -51,9 +51,8 @@ header .sidenav{
   //nav links styles
   ul.head-nav{
     width: 100%;
-    margin-top: 3rem;
-    
-
+    margin-top: 50%;
+   
     //creating the white colored bottom border
     li{
       border-bottom: 1px solid $light-white;

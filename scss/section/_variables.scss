@@ -105,3 +105,37 @@ $card-hover-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
      }
   }
 }
+
+//media query mixins
+
+//SMARTPHONES
+@mixin mediaSm{
+
+   @media screen and (max-width: 500px){
+     @content;
+   } 
+}
+ 
+ //TABLETS,SMALL LAPTOPS
+ @mixin mediaMd{
+
+   @media screen and (max-width: 768px){
+     @content;
+   } 
+}
+ 
+ //DESKTOPS,LAPTOPS
+ @mixin mediaLg{
+
+   @media screen and (min-width: 769px) and (max-width: 1170px){
+     @content;
+   } 
+}
+ 
+ //WIDESCREENS
+ @mixin mediaXl{
+    
+   @media screen and (min-width: 1171px){
+     @content;
+   } 
+}
