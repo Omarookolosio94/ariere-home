@@ -107,7 +107,7 @@ header .sidenav {
 #section-a {
   padding-top: 3.4rem;
   background-color: rgba(179, 179, 179, 0.9);
-  background: url("../../dist/img/engineering.jpg") no-repeat;
+  background: url("./img/engineering.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   height: 60vh; }
