@@ -19,5 +19,13 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omarookolosio94/ariere.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Omarookolosio94/ariere/issues"
   }
 }
